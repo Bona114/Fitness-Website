@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Playwrite+NZ+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <h1>Fitness</h1>
+            </div>
+
+            <!-- NAV LINKS -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#member" class="call-to-action square">BECOME A MEMBER</a></li>
+            </ul>
+
+            <!-- HAMBURBUR -->
+            <div class="hamburger" id="hamburger">
+                <img src="./img/hamburger.png" alt="">
+            </div>
+            <script>
+                const hamburger = document.getElementById("hamburger");
+                const navLinks = document.getElementById("navLinks");
+
+                hamburger.addEventListener("click", () => {
+                    navLinks.classList.toggle("show");
+                });
+            </script>
+        </nav>
+    </header>
+    <hr id="bar">
+
+    <main>
+        <!-- ABOUT -->
+        <section class="sect" id="about-sect">
+            <div class="flex-container">
+                <div class="left">
+                    <img src="img/pic1.jpg" alt="Bodybuilder">
+                </div>
+                <div class="right">
+                    <h4 class="square">― ABOUT OUR GYM</h4>
+                    <h2>Safe Body building proper Solutions That Saves our Valuable Time!</h2>
+                    <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium qui neque odit quos ut iure distinctio ipsa sapiente placeat voluptatem delectus, harum veniam illo aut, libero fugit. Autem, porro iusto.</b></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid itaque et obcaecati. Praesentium, dolorem adipisci!</p>
+                    <a href="#member" class="call-to-action square">BECOME A MEMBER</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <h6>COMPANY</h6>
+                <a href="about.html">About US</a>
+                <a href="">Company</a>
+                <a href="">Press & Blog</a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div>
+                <h6>OPEN HOURS</h6>
+                <a href="">Monday 11am-7pm</a>
+                <a href="">Tuesday-Friday 11am-8pm</a>
+                <a href="">Saturday 10am-6pm</a>
+                <a href="">Sunday 11am-6pm</a>
+            </div> /.
+            <div>
+                <h6>RESOURCES</h6>
+                <a href="">Home Insurance</a>
+                <a href="">Travel Insurance</a>
+                <a href="">Car Insurance</a>
+                <a href="">Business Insurance</a>
+                <a href="">Heal Insurance</a>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright ©2025 All rights reserved</p>
+    </footer>
+</body>
+</html>

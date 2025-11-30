@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Playwrite+NZ+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <h1>Fitness</h1>
+            </div>
+
+            <!-- NAV LINKS -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#member" class="call-to-action square">BECOME A MEMBER</a></li>
+            </ul>
+
+            <!-- HAMBURBUR -->
+            <div class="hamburger" id="hamburger">
+                <img src="./img/hamburger.png" alt="">
+            </div>
+            <script>
+                const hamburger = document.getElementById("hamburger");
+                const navLinks = document.getElementById("navLinks");
+
+                hamburger.addEventListener("click", () => {
+                    navLinks.classList.toggle("show");
+                });
+            </script>
+        </nav>
+    </header>
+    <hr id="bar">
+
+    <main>
+        <!-- SERVICES -->
+        <section class="sect" id="service-sect">
+            <h4 class="square">― OUR SERVICES FOR YOU</h4>
+            <h2>PUSH YOUR LIMITS FORWARD <br>We Offer to you</h2>
+            <a href="#services" class="call-to-action square">MORE SERVICES</a>
+            <div class="flex-container">
+                <div class="card">
+                    <img src="img/dumbell.png" alt="dumbell" class="icon">
+                    <h3>QUALITY EQUIPMENT</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum soluta perspiciatis maxime assumenda beatae.</p>
+                    <a href="#services" class="discover">DISCOVER MORE ABOUT US</a>
+                </div>
+                <div class="card">
+                    <img src="img/heart.png" alt="heart" class="icon">
+                    <h3>HEALTH CARING</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic unde culpa. Temporibus, ea dolor!</p>
+                    <a href="#services" class="discover">DISCOVER MORE ABOUT US</a>
+                </div>
+                <div class="card">
+                    <img src="img/clock.png" alt="clock" class="icon">
+                    <h3>GYM STRATEGIES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam pariatur dolorem numquam iusto ut!</p>
+                    <a href="#services" class="discover">DISCOVER MORE ABOUT US</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <h6>COMPANY</h6>
+                <a href="about.html">About US</a>
+                <a href="">Company</a>
+                <a href="">Press & Blog</a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div>
+                <h6>OPEN HOURS</h6>
+                <a href="">Monday 11am-7pm</a>
+                <a href="">Tuesday-Friday 11am-8pm</a>
+                <a href="">Saturday 10am-6pm</a>
+                <a href="">Sunday 11am-6pm</a>
+            </div>
+            <div>
+                <h6>RESOURCES</h6>
+                <a href="">Home Insurance</a>
+                <a href="">Travel Insurance</a>
+                <a href="">Car Insurance</a>
+                <a href="">Business Insurance</a>
+                <a href="">Heal Insurance</a>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright ©2025 All rights reserved</p>
+    </footer>
+</body>
+</html>

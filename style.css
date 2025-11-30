@@ -1,0 +1,312 @@
+.nova-square-regular {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.square {
+    font-family: "Nova Square", sans-serif;
+}
+
+/* NAVIGATION */
+.navbar {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+#bar {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    border: 3rem solid black;
+}
+.logo {
+    display: flex;
+}
+.logo img {
+    width: 3vw;
+    height: 3vw;
+}
+.logo h1 {
+    padding: 4px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: "Nova Square", sans-serif;
+}
+.nav-links li a:hover {
+    color: red;
+    transition: color 0.2s;
+}
+.call-to-action {
+    padding: 1.2rem 2vw;
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: red;
+}
+.call-to-action:hover {
+    color: white !important;
+    background-color: darkred;
+    transition: all 0.5s;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger img {
+    width: 2vw;
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    height: 64rem;
+    padding: 16rem 10vw;
+    color: white;
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hero p {
+    font-size: 1.2rem;
+    padding: 3rem 0;
+    color: red;
+    width: 25vw;
+}
+.hero h1 {
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 4rem;
+    line-height: 5rem;
+    width: 42vw;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+}
+
+/* SECTION */
+.sect {
+    padding: 10rem;
+    text-align: center;
+    color: darkslategray;
+}
+
+img {
+    width: 30vw;
+}
+
+h2 {
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+    margin-block: 1rem;
+}
+h4 {
+    font-weight: normal;
+    color: red;
+}
+p {
+    margin-block: 2rem;
+}
+
+/* FLEX CONTAINER */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.left {
+    max-width: 60%;
+    text-align: right;
+}
+.right {
+    max-width: 45%;
+    text-align: left;
+}
+.flex-container button {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: aliceblue;
+    border: 0;
+    cursor: pointer;
+}
+.flex-container button:active {
+    background-color: red;
+    color: white;
+}
+#date {
+    padding: 2rem;
+    background-color: aliceblue;
+    gap: 2rem !important;
+}
+input[type="radio"] {
+    display: none;
+}
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1rem;
+    width: 8rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+input[type="radio"]:checked + label {
+    background-color: red;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+/* SERVICE */
+#service-sect {
+    text-align: left;
+    color: white;
+    background-image: url(img/pic2.jpg);
+    background-size: cover;
+}
+#service-sect .call-to-action {
+    display: block;
+    text-align: right;
+    justify-self: end;
+    margin-top: -4rem;
+}
+
+/* CARD */
+.card {
+    display: flexbox;
+    color: black;
+    background-color: white;
+    text-align: center;
+    gap: 10rem;
+    margin-top: 4rem;
+    max-width: 30%;
+}
+.card img {
+    padding: 4rem;
+    width: 11rem;
+}
+.card p {
+    padding-inline: 2rem;
+    line-height: 2rem;
+}
+.card:hover {
+    .discover {
+        background-color: red;
+        transition: background-color 0.5s;
+    }
+    .icon {
+        filter: invert(0.3) sepia(100%) saturate(1000%) hue-rotate(320deg);
+    }
+}
+.discover {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: white;
+    padding-block: 1rem;
+    font-size: 0.75rem;
+}
+
+/* FORM */
+.text {
+    width: 15rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+}
+.text:focus {
+    outline: none !important;
+}
+.text:focus::placeholder {
+    color: lightgray;
+}
+.area {
+    margin-inline: 0;
+    width: 32rem !important;
+    height: 6rem;
+    resize: vertical;
+}
+.submit {
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    background-image: url(img/pic5.jpg);
+    background-size: cover;
+    background-position: top;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div div {
+    padding-left: 4rem;
+    margin-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer div div a {
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+footer div div a:hover {
+    padding-left: 0.5rem;
+    padding-right: 0rem;
+    transition: all 0.2s;
+}
+
+footer hr {
+    margin-top: 4rem;
+    border: 0.2px solid #222;
+}
+
+footer p {
+    text-align: center;
+}

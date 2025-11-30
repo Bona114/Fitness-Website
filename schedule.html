@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Playwrite+NZ+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <h1>Fitness</h1>
+            </div>
+
+            <!-- NAV LINKS -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#member" class="call-to-action square">BECOME A MEMBER</a></li>
+            </ul>
+
+            <!-- HAMBURBUR -->
+            <div class="hamburger" id="hamburger">
+                <img src="./img/hamburger.png" alt="">
+            </div>
+            <script>
+                const hamburger = document.getElementById("hamburger");
+                const navLinks = document.getElementById("navLinks");
+
+                hamburger.addEventListener("click", () => {
+                    navLinks.classList.toggle("show");
+                });
+            </script>
+        </nav>
+    </header>
+    <hr id="bar">
+
+    <main>
+        <!-- SCHEDULE -->
+        <section class="sect" id="schedule-sect">
+            <h4 class="square">― OUR TIME SCHEDULE</h4>
+            <h2>SELECT THE PERFECT TIME<br>YOU NEED NOW</h2>
+            <br>
+            <div class="flex-container" id="date">
+                <input type="radio" name="date" id="sunday">
+                <label for="sunday" class="custom-radio">Sunday</label>
+                <input type="radio" name="date" id="monday">
+                <label for="monday" class="custom-radio">Monday</label>
+                <input type="radio" name="date" id="tuesday">
+                <label for="tuesday" class="custom-radio">Tuesday</label>
+                <input type="radio" name="date" id="wednesday">
+                <label for="wednesday" class="custom-radio">Wednesday</label>
+                <input type="radio" name="date" id="thursday">
+                <label for="thursday" class="custom-radio">Thursday</label>
+                <input type="radio" name="date" id="friday">
+                <label for="friday" class="custom-radio">Friday</label>
+                <input type="radio" name="date" id="saturday">
+                <label for="saturday" class="custom-radio">Saturday</label>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <h6>COMPANY</h6>
+                <a href="about.html">About US</a>
+                <a href="">Company</a>
+                <a href="">Press & Blog</a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div>
+                <h6>OPEN HOURS</h6>
+                <a href="">Monday 11am-7pm</a>
+                <a href="">Tuesday-Friday 11am-8pm</a>
+                <a href="">Saturday 10am-6pm</a>
+                <a href="">Sunday 11am-6pm</a>
+            </div>
+            <div>
+                <h6>RESOURCES</h6>
+                <a href="">Home Insurance</a>
+                <a href="">Travel Insurance</a>
+                <a href="">Car Insurance</a>
+                <a href="">Business Insurance</a>
+                <a href="">Heal Insurance</a>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright ©2025 All rights reserved</p>
+    </footer>
+</body>
+</html>
